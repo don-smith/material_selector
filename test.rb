@@ -1,12 +1,6 @@
-good_face = {:material_match => true}
-bad_face = {:material_match => false}
-group 
+#!/usr/local/bin/ruby
 
+require 'fileutils.rb'
 
+puts File.expand_path(__FILE__)
 
-model
-  component instance
-    component definition
-  group
-    face
-    edge
