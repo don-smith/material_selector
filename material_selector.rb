@@ -3,9 +3,9 @@ class MaterialSelector
 
   def select(model, material)
     model.selection.clear
-    model.entities.each do |entity|
-      select_with entity, material do |e|
-        model.selection.add e
+    model.active_entities.each do |entity|
+      select_with entity, material do |matching_entity|
+        model.selection.add matching_entity
       end
     end
   end
