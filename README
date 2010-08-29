@@ -1,0 +1,26 @@
+
+This is a plugin script for Google Sketchup 7 that selects all faces in the model based on the currently selected material even if the faces are buried deep inside layers of groups and components. 
+
+You may also download progressbar.rb from its creator, Todd Burch, at http://www.smustard.com/script/ProgressBar. It is only included here to fulfill the dependency.
+
+To use this plugin:
+
+1. Copy material_selector.rb and progressbar.rb into Sketchup's plugin directory. If you already have the progressbar plugin installed, you probably don't need this one.
+
+2. Open your model in Sketchup and using the Window menu display the Outliner window. To the right of the search box, click the arrow and select "Expand all"
+
+3. Using the Window menu again, display the Materials window. Choose "Colors in Model" from the drop-down menu and select the material to select.
+
+NOTE: The Mac OS X version of Sketchup has a bug that requires you to apply the material to an object in order to activate it as the current color/material. A future version of this script will provide a more uniform way of selecting the current color/material.
+
+4. From the Edit menu, choose "Select all by material" and wait for the progress bar at the bottom of the window to complete. Sketchup won't be usable while the script is running.
+
+NOTE: The script will clear all previously selected objects and will only look in visible layers.
+
+5. After the script finishes, you should be able to scroll through the Outliner window to find the selected object.
+
+TIP: You can right-click on items in the Outliner window and choose "Zoom extents" to have the main model window zoom to the selected object.
+
+I wrote this for my wife, a professional Sketchup user, who was frustrated by always seeing materials used in the model without being able to find where they are being used. It still isn't perfect. There are still some materials it can't find. Often, these materials have zero square inches of area. You can see the area if you right-click on a material and choose "area". I'll update the script after I figure out how to find these (un)used materials.
+
+Let me know if you find other issues with this plugin that aren't already mentioned. Thanks.
